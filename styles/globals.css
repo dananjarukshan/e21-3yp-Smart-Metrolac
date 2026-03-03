@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased;
+}
+
+.container-standard {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-14 sm:py-16 lg:py-20;
+}
+
+.surface-card {
+  @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-soft transition-transform duration-300 hover:-translate-y-1;
+}
+
+.page-title {
+  @apply text-3xl font-bold leading-tight text-brand-navy sm:text-4xl;
+}
+
+.page-lead {
+  @apply mt-4 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg;
+}
